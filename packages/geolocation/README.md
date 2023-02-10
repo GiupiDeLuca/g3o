@@ -11,7 +11,7 @@ In order to call the mainnet API you'll need to specify it like this: `new Geolo
 In order to generate a Siwe message, you'll have to first create a location, like this: 
 
 ```typescript
- geolocation.location = ({latitude: 47.658872, longitude: -27.4444, distance:1000, from: timestampMs, to: timestampMs})
+ geolocation.location = ({latitude: 47.658872, longitude: -27.4444, distance:1000, from: timestamp, to: timestamp})
  ```
  
 Or for scaled coordinates (e.g. latitude: 47658872, etc...) you can set a `scaledLocationArea` like this: 
@@ -28,7 +28,7 @@ geolocation.scaledLocationArea = {
 
 ```
 
-And set the location time in milliseconds like this: 
+And set the location time in seconds like this: 
 
 ```typescript
 
